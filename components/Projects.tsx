@@ -18,7 +18,7 @@ export default function Projects() {
       alignItems="center"
       flexDir="column"
       w="100%"
-      p={{ base: "1rem", lg: "" }}
+      p={{ base: "1rem", lg: "2rem" }}
     >
       <Text m="2rem 0" fontWeight={700} fontSize="4em">
         Projects

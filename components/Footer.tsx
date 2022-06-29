@@ -1,8 +1,10 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
-import Hazel from "../public/assets/hazel.jpg";
+import dayjs from "dayjs";
 
 export default function Footer() {
   return (
-    <Flex flexDir="column" justify="center" align="center" mt="5rem"></Flex>
+    <Flex flexDir="column" justify="center" align="center">
+      <Text>© {dayjs().get("year")} Hazel Akinyi. All rights reserved.</Text>
+    </Flex>
   );
 }

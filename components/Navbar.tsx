@@ -44,43 +44,59 @@ export default function Navbar() {
         since 2019.
       </Text>
       <Flex w="15%" justify="space-around" mt="0.5rem">
-        <Image
-          src={Github.src}
-          alt="github icon"
-          boxSize={10}
-          _hover={{
-            cursor: "pointer",
-          }}
-        />
-        <Image
-          src={LinkedIn.src}
-          alt="linkedin icon"
-          boxSize={10}
-          _hover={{
-            cursor: "pointer",
-          }}
-        />
-        <Image
-          src={Gmail.src}
-          alt="gmail icon"
-          boxSize={10}
-          bg="blue"
-          _hover={{
-            cursor: "pointer",
-          }}
-        />
+        <a
+          href="https://github.com/HazelCindy"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image
+            src={Github.src}
+            alt="github icon"
+            boxSize={10}
+            _hover={{
+              cursor: "pointer",
+            }}
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/hazel-orlendo-794465b0/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image
+            src={LinkedIn.src}
+            alt="linkedin icon"
+            boxSize={10}
+            _hover={{
+              cursor: "pointer",
+            }}
+          />
+        </a>
+        <a href="mailto:akinyiagnes.97@gmail.com">
+          <Image
+            src={Gmail.src}
+            alt="gmail icon"
+            boxSize={10}
+            bg="blue"
+            _hover={{
+              cursor: "pointer",
+            }}
+          />
+        </a>
       </Flex>
-      <Button
-        bg="black"
-        color="white"
-        mt="1rem"
-        h="2.5rem"
-        _hover={{
-          bg: "#1B5299",
-        }}
-      >
-        Contact Me
-      </Button>
+      <a href="mailto:akinyiagnes.97@gmail.com">
+        <Button
+          bg="black"
+          color="white"
+          mt="1rem"
+          h="2.5rem"
+          _hover={{
+            bg: "#1B5299",
+          }}
+        >
+          Contact Me
+        </Button>
+      </a>
     </Flex>
   );
 }
